@@ -4,22 +4,20 @@ var ctx = canvas.getContext( '2d' );
 canvas.width = 600;
 canvas.height = 460;
 
-ctx.fillStyle = '#2980b9';
-ctx.fillRect(0,0,canvas.width,canvas.height);
+var img1 = new Image();
 
-ctx.fillStyle = '#ffffff';
-ctx.fillRect(50,50,500,350);
+img1.onload = function () {
+
+    ctx.drawImage(img1, 0, 0);
+};
+
+img1.src = 'img/bg-post-fb.jpg';
 
 function reset() {
-	
-	ctx.fillStyle = '#2980b9';
-	ctx.fillRect(0,0,canvas.width,canvas.height);
 
-	ctx.fillStyle = '#ffffff';
-	ctx.fillRect(50,50,500,350);
+	ctx.drawImage(img1, 0, 0);
 
 }
-
 
 var link = document.querySelector('#download');
     

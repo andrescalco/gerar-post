@@ -3,21 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gerar Post</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
 </head>
 <body>
 
-
-	<form>
-		<input type="text" placeholder="Palavra em Grego" id='palavra'>
-		<input type="text" placeholder="Tradução" id="traducao">
-	</form>
-	
-
-	<canvas id="my-canvas"></canvas>
-
-	<div>
-		<a href="#" id="download">Download</a>
+	<div class="col-md-6">
+		<form>
+			<div class="col-md-12 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Palavra em Grego" id='palavra'>
+				</div>
+			</div>
+			<div class="col-md-12 form-group">
+				<div class="controls">
+					<input class="form-control" type="text" placeholder="Tradução" id="traducao">
+				</div>
+			</div>
+		</form>
 	</div>
+
+	<div class="col-md-6">
+		<canvas id="my-canvas"></canvas>
+
+		<div>
+			<a href="#" id="download">Download</a>
+		</div>
+	</div>
+
 
 	<script type="text/javascript" src="app.js"></script>
 
